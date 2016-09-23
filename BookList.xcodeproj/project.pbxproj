@@ -13,6 +13,8 @@
 		F7270B4A1D95B7D7000C4CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7270B491D95B7D7000C4CA4 /* Assets.xcassets */; };
 		F7270B4D1D95B7D7000C4CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7270B4B1D95B7D7000C4CA4 /* LaunchScreen.storyboard */; };
 		F7270B581D95B7D7000C4CA4 /* BookListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270B571D95B7D7000C4CA4 /* BookListTests.swift */; };
+		F7270B641D95B81E000C4CA4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7270B621D95B81E000C4CA4 /* Model.xcdatamodeld */; };
+		F7270B661D95BC9E000C4CA4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F7270B531D95B7D7000C4CA4 /* BookListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7270B571D95B7D7000C4CA4 /* BookListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTests.swift; sourceTree = "<group>"; };
 		F7270B591D95B7D7000C4CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7270B631D95B81E000C4CA4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				F7270B421D95B7D7000C4CA4 /* AppDelegate.swift */,
 				F7270B441D95B7D7000C4CA4 /* ViewController.swift */,
+				F7270B621D95B81E000C4CA4 /* Model.xcdatamodeld */,
+				F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */,
 				F7270B461D95B7D7000C4CA4 /* Main.storyboard */,
 				F7270B491D95B7D7000C4CA4 /* Assets.xcassets */,
 				F7270B4B1D95B7D7000C4CA4 /* LaunchScreen.storyboard */,
@@ -203,6 +209,8 @@
 			files = (
 				F7270B451D95B7D7000C4CA4 /* ViewController.swift in Sources */,
 				F7270B431D95B7D7000C4CA4 /* AppDelegate.swift in Sources */,
+				F7270B641D95B81E000C4CA4 /* Model.xcdatamodeld in Sources */,
+				F7270B661D95BC9E000C4CA4 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +418,7 @@
 				F7270B5E1D95B7D7000C4CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7270B5F1D95B7D7000C4CA4 /* Build configuration list for PBXNativeTarget "BookListTests" */ = {
 			isa = XCConfigurationList;
@@ -418,8 +427,23 @@
 				F7270B611D95B7D7000C4CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7270B621D95B81E000C4CA4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7270B631D95B81E000C4CA4 /* Model.xcdatamodel */,
+			);
+			currentVersion = F7270B631D95B81E000C4CA4 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F7270B371D95B7D7000C4CA4 /* Project object */;
 }
