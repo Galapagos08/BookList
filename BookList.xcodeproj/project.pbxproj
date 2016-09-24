@@ -15,6 +15,7 @@
 		F7270B581D95B7D7000C4CA4 /* BookListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270B571D95B7D7000C4CA4 /* BookListTests.swift */; };
 		F7270B641D95B81E000C4CA4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7270B621D95B81E000C4CA4 /* Model.xcdatamodeld */; };
 		F7270B661D95BC9E000C4CA4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */; };
+		F7BB06471D96EDB400C6A849 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB06461D96EDB400C6A849 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F7270B591D95B7D7000C4CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7270B631D95B81E000C4CA4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F7BB06461D96EDB400C6A849 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				F7270B421D95B7D7000C4CA4 /* AppDelegate.swift */,
 				F7270B441D95B7D7000C4CA4 /* ViewController.swift */,
 				F7270B621D95B81E000C4CA4 /* Model.xcdatamodeld */,
+				F7BB06461D96EDB400C6A849 /* API.swift */,
 				F7270B651D95BC9E000C4CA4 /* CoreDataStack.swift */,
 				F7270B461D95B7D7000C4CA4 /* Main.storyboard */,
 				F7270B491D95B7D7000C4CA4 /* Assets.xcassets */,
@@ -211,6 +214,7 @@
 				F7270B431D95B7D7000C4CA4 /* AppDelegate.swift in Sources */,
 				F7270B641D95B81E000C4CA4 /* Model.xcdatamodeld in Sources */,
 				F7270B661D95BC9E000C4CA4 /* CoreDataStack.swift in Sources */,
+				F7BB06471D96EDB400C6A849 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
