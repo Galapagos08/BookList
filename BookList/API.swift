@@ -27,10 +27,7 @@ class EbayAPI {
         
         do {
             let jsonObject: Any = try JSONSerialization.jsonObject(with: data, options: [])
-            guard let
-                jsonDictionary = jsonObject as? [AnyHashable: Any],
-                let books = jsonDictionary["books"] as? [String:AnyObject],
-                let booksArray = books["book"] as? [[String:AnyObject]] else {
+            guard let booksArray = jsonObject as? [[String:AnyObject]] else {
                     return .failure(EbayError.invalidjsonData)
             }
             
@@ -60,19 +57,19 @@ class EbayAPI {
         let author = json["author"] as? String
         let imageURL = json["imageURL"] as? String
         
-        var post:Book!
+        var book:Book!
         context.performAndWait({ () -> Void in
             if #available (iOS 10.0, *) {
-                post = Book(entity: Book.entity(),
+                book = Book(entity: Book.entity(),
                             insertInto: context)
             } else{
-                post = NSEntityDescription.insertNewObject(forEntityName: "Book", into: context) as! Book}
-            post.title = title
-            post.author = author
-            post.imageURL = imageURL
-            post.thumbnailKey = imageURL.map { _ in UUID().uuidString }
+                book = NSEntityDescription.insertNewObject(forEntityName: "Book", into: context) as! Book}
+            book.title = title
+            book.author = author
+            book.imageURL = imageURL
+            book.thumbnailKey = imageURL.map { _ in UUID().uuidString }
             })
         
-        return post
+        return book
     }
 }

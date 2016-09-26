@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,13 +16,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4EZ-Vu-a98">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="4EZ-Vu-a98" customClass="ItemCell" customModule="BookList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4EZ-Vu-a98" id="Mqu-0F-XuG">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP6-Um-RAX">
+                                            <frame key="frameInset" minX="20" width="347" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pI-VZ-l6b">
+                                            <frame key="frameInset" minX="20" minY="29" width="42" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0pI-VZ-l6b" firstAttribute="top" secondItem="OP6-Um-RAX" secondAttribute="bottom" constant="8" symbolic="YES" id="4k8-Uo-qLO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="OP6-Um-RAX" secondAttribute="trailing" id="ZkC-vR-tOg"/>
+                                        <constraint firstItem="OP6-Um-RAX" firstAttribute="leading" secondItem="Mqu-0F-XuG" secondAttribute="leading" constant="20" id="cMM-qQ-6pP"/>
+                                        <constraint firstItem="0pI-VZ-l6b" firstAttribute="leading" secondItem="OP6-Um-RAX" secondAttribute="leading" id="fBS-Mf-bNv"/>
+                                        <constraint firstItem="OP6-Um-RAX" firstAttribute="top" secondItem="Mqu-0F-XuG" secondAttribute="top" id="jky-rQ-F3O"/>
+                                        <constraint firstAttribute="bottom" secondItem="0pI-VZ-l6b" secondAttribute="bottom" id="la1-vX-zOB"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="author" destination="0pI-VZ-l6b" id="U9Q-BC-84I"/>
+                                    <outlet property="title" destination="OP6-Um-RAX" id="QMO-3k-sNK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,7 +60,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrx-kx-ws8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="-115.59220389805098"/>
+            <point key="canvasLocation" x="996" y="-137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N0f-Gw-RLz">

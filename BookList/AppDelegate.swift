@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
        
         let rootViewController = window!.rootViewController as! UINavigationController
-        let booksViewController = rootViewController.topViewController as! BooksViewController
-        booksViewController.bookStore = BookStore()
-        booksViewController.imageStore = ImageStore()
+        let bvc = rootViewController.topViewController as! BooksViewController
+        bvc.bookStore = BookStore()
+        bvc.imageStore = ImageStore()
 
         
         return true

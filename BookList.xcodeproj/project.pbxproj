@@ -17,6 +17,7 @@
 		F736C5911D998C9300DA82AD /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736C58F1D998C9300DA82AD /* Book+CoreDataClass.swift */; };
 		F736C5921D998C9300DA82AD /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736C5901D998C9300DA82AD /* Book+CoreDataProperties.swift */; };
 		F736C5941D99938600DA82AD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736C5931D99938600DA82AD /* CoreDataStack.swift */; };
+		F736C5961D99A07E00DA82AD /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F736C5951D99A07E00DA82AD /* ItemCell.swift */; };
 		F7BB06471D96EDB400C6A849 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB06461D96EDB400C6A849 /* API.swift */; };
 		F7BB06531D9717ED00C6A849 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB06521D9717ED00C6A849 /* BooksViewController.swift */; };
 		F7BB06571D971A7E00C6A849 /* BookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB06561D971A7E00C6A849 /* BookStore.swift */; };
@@ -47,6 +48,7 @@
 		F736C58F1D998C9300DA82AD /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F736C5901D998C9300DA82AD /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F736C5931D99938600DA82AD /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F736C5951D99A07E00DA82AD /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		F7BB06461D96EDB400C6A849 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F7BB06521D9717ED00C6A849 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		F7BB06561D971A7E00C6A849 /* BookStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookStore.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				F7BB06561D971A7E00C6A849 /* BookStore.swift */,
 				F736C5851D99801A00DA82AD /* ImageStore.swift */,
 				F7270B461D95B7D7000C4CA4 /* Main.storyboard */,
+				F736C5951D99A07E00DA82AD /* ItemCell.swift */,
 				F7270B491D95B7D7000C4CA4 /* Assets.xcassets */,
 				F7270B4B1D95B7D7000C4CA4 /* LaunchScreen.storyboard */,
 				F7270B4E1D95B7D7000C4CA4 /* Info.plist */,
@@ -226,6 +229,7 @@
 				F7BB06531D9717ED00C6A849 /* BooksViewController.swift in Sources */,
 				F7270B431D95B7D7000C4CA4 /* AppDelegate.swift in Sources */,
 				F736C5941D99938600DA82AD /* CoreDataStack.swift in Sources */,
+				F736C5961D99A07E00DA82AD /* ItemCell.swift in Sources */,
 				F736C5861D99801A00DA82AD /* ImageStore.swift in Sources */,
 				F7270B641D95B81E000C4CA4 /* BookList.xcdatamodeld in Sources */,
 				F7BB06471D96EDB400C6A849 /* API.swift in Sources */,
