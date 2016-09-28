@@ -21,7 +21,7 @@ enum EbayError: Error {
 class EbayAPI {
     
     
-    static internal let url = URL(string:"https://de-coding-test.s3.amazonaws.com/books.json")!
+    static internal let url = URL(string:"http://calm-mountain-87063.herokuapp.com/books.json")!
     
     class func booksFromJSONData (_ data: Data, inContext context: NSManagedObjectContext)-> BooksResult {
         
