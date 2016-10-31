@@ -30,14 +30,12 @@ class EbayAPI {
             guard let booksArray = jsonObject as? [[String:AnyObject]] else {
                     return .failure(EbayError.invalidjsonData)
             }
-            
             var finalBooks = [Book]()
             for bookJSON in booksArray {
                 if let book = bookFromJSONObject(bookJSON, inContext: context) {
                     finalBooks.append(book)
                 }
             }
-            
             if finalBooks.count == 0 && booksArray.isEmpty == false {
                 return .failure(EbayError.invalidjsonData)
             }
@@ -46,7 +44,6 @@ class EbayAPI {
         catch let error {
             return .failure(error)
         }
-        
     }
     
     fileprivate class func bookFromJSONObject (_ json: [String:AnyObject], inContext context: NSManagedObjectContext)-> Book? {
@@ -56,7 +53,6 @@ class EbayAPI {
         }
         let author = json["author"] as? String
         let imageURL = json["imageURL"] as? String
-        
         var book:Book!
         context.performAndWait({ () -> Void in
             if #available (iOS 10.0, *) {

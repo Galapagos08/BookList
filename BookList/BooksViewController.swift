@@ -12,25 +12,20 @@ class BooksViewController: UITableViewController {
    
     var books: [Book] = []
     var bookStore: BookStore!
-    var imageStore: ImageStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 65
-        
         bookStore.fetchBooks{
             (booksResult) -> Void in
-            
             switch booksResult {
             case let .success(books):
                 print("Successfully found \(books.count) books.")
-                
                 OperationQueue.main.addOperation {
                     self.books = books
                     self.tableView.reloadData()
@@ -49,14 +44,9 @@ class BooksViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
-        
-       // cell.updateLabels()
-        
         let book = books[(indexPath as NSIndexPath).row]
-        
         cell.title.text = book.title
         cell.author.text = book.author
-        
         return cell
     }
 }
